@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  overflow: auto;
+  font-size: 1em;
+}
+a {
+  text-decoration: none;
+  color: darkred;
+}
+
+.ballet{
+  font-family: 'Ballet', cursive;
+  text-align: left;
+  font-size: 3em;
+}
+
+.ballet2{
+  font-family: 'Ballet', cursive;
+  text-align: right;
+}
+
+.letter-screen {
+  position: fixed;
+  top: auto;
+  left: auto;
+  transform: none;
+  width: 100%;
+  padding: 1em 1em;
+  text-align: left;
+  z-index: 10;
+}
+.letter-screen.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.envelope-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  z-index: 20;
+  transition: opacity 0.6s ease;
+}
+.envelope-container.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.envelope {
+  width: 100%;
+  height: auto;
+  background: url('source/envelope.png') no-repeat center/contain;
+  background-size: contain;
+  aspect-ratio: 4 / 3;
+  cursor: pointer;
+}
+
+.music-control {
+  position: fixed;
+  bottom: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  text-align: center;
+}
+
+.music-control button {
+  padding: 0.6em 0.8em;
+  font-size: 1em;
+  background-color: lightgrey;
+  color: white;
+  border: none;
+  border-radius: 1em;
+  cursor: pointer;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+
